@@ -1,5 +1,6 @@
 package com.sajee.meetingmind.attachment.entity;
 
+import com.sajee.meetingmind.common.AuditableEntity;
 import com.sajee.meetingmind.meeting.entity.Meeting;
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,7 +12,7 @@ import lombok.*;
 @Setter
 @Getter
 @Builder
-public class MeetingAttachment {
+public class MeetingAttachment extends AuditableEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
