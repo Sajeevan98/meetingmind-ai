@@ -1,6 +1,6 @@
 package com.sajee.meetingmind.attachment.entity;
 
-import com.sajee.meetingmind.common.AuditableEntity;
+import com.sajee.meetingmind.util.common.AuditableEntity;
 import com.sajee.meetingmind.meeting.entity.Meeting;
 import jakarta.persistence.*;
 import lombok.*;
