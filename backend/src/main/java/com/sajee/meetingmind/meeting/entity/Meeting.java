@@ -2,7 +2,7 @@ package com.sajee.meetingmind.meeting.entity;
 
 import com.sajee.meetingmind.analysis.entity.MeetingAnalysis;
 import com.sajee.meetingmind.attachment.entity.MeetingAttachment;
-import com.sajee.meetingmind.common.AuditableEntity;
+import com.sajee.meetingmind.util.common.AuditableEntity;
 import com.sajee.meetingmind.meeting.enums.MeetingStatus;
 import jakarta.persistence.*;
 import lombok.*;

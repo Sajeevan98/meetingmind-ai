@@ -1,4 +1,4 @@
-package com.sajee.meetingmind.exception;
+package com.sajee.meetingmind.util.exception;
 
 public class FileSizeExceededException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.sajee.meetingmind.common;
+package com.sajee.meetingmind.util.common;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
