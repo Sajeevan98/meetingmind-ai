@@ -1,5 +1,6 @@
 package com.sajee.meetingmind.meeting.entity;
 
+import com.sajee.meetingmind.analysis.entity.MeetingAnalysis;
 import com.sajee.meetingmind.attachment.entity.MeetingAttachment;
 import com.sajee.meetingmind.common.AuditableEntity;
 import com.sajee.meetingmind.meeting.enums.MeetingStatus;
@@ -51,5 +52,24 @@ public class Meeting extends AuditableEntity {
     public void removeAttachment(MeetingAttachment attachment) {
         attachments.remove(attachment);
         attachment.setMeeting(null);
+    }
+
+    @Builder.Default
+    @OneToMany(
+            mappedBy = "meeting",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private List<MeetingAnalysis> analyses = new ArrayList<>();
+
+    // helper methods for maintain both sides...
+    public void addAnalysis(MeetingAnalysis analysis) {
+        analyses.add(analysis);
+        analysis.setMeeting(this);
+    }
+
+    public void removeAnalysis(MeetingAnalysis analysis) {
+        analyses.remove(analysis);
+        analysis.setMeeting(null);
     }
 }
