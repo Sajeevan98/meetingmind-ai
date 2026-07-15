@@ -1,13 +1,15 @@
-package com.sajee.meetingmind.util.document.extractor;
+package com.sajee.meetingmind.document.extractor;
 
-import com.sajee.meetingmind.util.exception.DocumentExtractionException;
+import com.sajee.meetingmind.exception.DocumentExtractionException;
 import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.file.Path;
 
+@Service
 public class PdfDocumentExtractor implements DocumentExtractor {
 
     @Override

@@ -8,22 +8,28 @@ public final class MeetingAnalysisPrompt {
     public static String build(String meetingContent) {
 
         return """
-                You are an expert AI meeting assistant.
+                You are an AI meeting assistant.
+                Analyze the meeting notes below.
+                Return ONLY valid JSON.
+                Do not include markdown.
+                Do not include explanation.
+                Do not wrap the JSON inside ```.
+                Return exactly this structure:
+                {
+                  "summary": "...",
+                  "actionItems": [
+                    {
+                      "assignee": "...",
+                      "task": "...",
+                      "deadline": "..."
+                    }
+                  ],
+                  "decisions": [
+                    "..."
+                  ]
+                }
+                Meeting Notes:
                 
-                Analyze the following meeting notes.
-                
-                Return the response using exactly this format.
-                
-                SUMMARY:
-                <summary>
-                
-                ACTION ITEMS:
-                <action items>
-                
-                DECISIONS:
-                <decisions>
-                
-                MEETING NOTES:
                 %s
                 """.formatted(meetingContent);
     }

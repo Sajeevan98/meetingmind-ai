@@ -1,10 +1,10 @@
-package com.sajee.meetingmind.util.storage.service;
+package com.sajee.meetingmind.storage.service;
 
-import com.sajee.meetingmind.util.exception.EmptyFileException;
-import com.sajee.meetingmind.util.exception.FileSizeExceededException;
-import com.sajee.meetingmind.util.exception.FileStorageException;
-import com.sajee.meetingmind.util.exception.InvalidFileTypeException;
-import com.sajee.meetingmind.util.storage.config.FileStorageProperties;
+import com.sajee.meetingmind.exception.EmptyFileException;
+import com.sajee.meetingmind.exception.FileSizeExceededException;
+import com.sajee.meetingmind.exception.FileStorageException;
+import com.sajee.meetingmind.exception.InvalidFileTypeException;
+import com.sajee.meetingmind.storage.config.FileStorageProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

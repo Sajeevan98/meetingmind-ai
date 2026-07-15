@@ -1,4 +1,4 @@
-package com.sajee.meetingmind.util.storage.config;
+package com.sajee.meetingmind.storage.config;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
 package com.sajee.meetingmind;
 
-import com.sajee.meetingmind.util.storage.config.FileStorageProperties;
+import com.sajee.meetingmind.storage.config.FileStorageProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

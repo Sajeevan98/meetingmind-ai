@@ -1,6 +1,6 @@
-package com.sajee.meetingmind.util.document.extractor;
+package com.sajee.meetingmind.document.extractor;
 
-import com.sajee.meetingmind.util.exception.DocumentExtractionException;
+import com.sajee.meetingmind.exception.DocumentExtractionException;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

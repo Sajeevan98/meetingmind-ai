@@ -1,4 +1,4 @@
-package com.sajee.meetingmind.util.storage.service;
+package com.sajee.meetingmind.storage.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

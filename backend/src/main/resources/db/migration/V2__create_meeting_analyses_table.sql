@@ -8,9 +8,9 @@ CREATE TABLE IF NOT EXISTS meeting_analyses (
 
     summary TEXT NOT NULL,
 
-    action_items TEXT NOT NULL,
+    action_items JSONB NOT NULL,
 
-    decisions TEXT NOT NULL,
+    decisions JSONB NOT NULL,
 
     raw_response TEXT,
 

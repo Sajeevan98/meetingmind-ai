@@ -1,6 +1,6 @@
 package com.sajee.meetingmind.meeting.controller;
 
-import com.sajee.meetingmind.util.common.ApiEndpoints;
+import com.sajee.meetingmind.common.ApiEndpoints;
 import com.sajee.meetingmind.meeting.dto.request.MeetingRequest;
 import com.sajee.meetingmind.meeting.dto.response.MeetingResponse;
 import com.sajee.meetingmind.meeting.service.MeetingService;
