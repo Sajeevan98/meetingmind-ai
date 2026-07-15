@@ -1,13 +1,15 @@
-package com.sajee.meetingmind.util.document.extractor;
+package com.sajee.meetingmind.document.extractor;
 
-import com.sajee.meetingmind.util.exception.DocumentExtractionException;
+import com.sajee.meetingmind.exception.DocumentExtractionException;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+@Service
 public class DocxDocumentExtractor implements DocumentExtractor {
 
     @Override

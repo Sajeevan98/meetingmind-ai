@@ -1,8 +1,8 @@
 package com.sajee.meetingmind.ai.service;
 
-import com.sajee.meetingmind.analysis.dto.MeetingAnalysisResult;
+import com.sajee.meetingmind.ai.dto.AiMeetingAnalysisResponse;
 
 public interface AiService {
 
-    MeetingAnalysisResult analyzeMeeting(String meetingContent);
+    AiMeetingAnalysisResponse analyzeMeeting(String meetingContent);
 }

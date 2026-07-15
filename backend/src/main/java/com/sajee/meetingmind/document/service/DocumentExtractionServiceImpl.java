@@ -1,7 +1,7 @@
-package com.sajee.meetingmind.util.document.service;
+package com.sajee.meetingmind.document.service;
 
-import com.sajee.meetingmind.util.document.extractor.DocumentExtractor;
-import com.sajee.meetingmind.util.exception.InvalidFileTypeException;
+import com.sajee.meetingmind.document.extractor.DocumentExtractor;
+import com.sajee.meetingmind.exception.InvalidFileTypeException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,11 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class DocumentExtractionService {
+public class DocumentExtractionServiceImpl implements DocumentExtractionService {
 
     private final List<DocumentExtractor> extractors;
 
+    @Override
     public String extract(Path filePath, String contentType) {
 
         DocumentExtractor extractor = extractors.stream()

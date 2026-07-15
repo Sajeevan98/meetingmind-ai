@@ -1,4 +1,4 @@
-package com.sajee.meetingmind.util.common;
+package com.sajee.meetingmind.common;
 
 public class ApiEndpoints {
 
